@@ -6,7 +6,7 @@
 - db = Arquivos do banco de dados (Local!!! Não subir para o git)
 - DockerConfig = Arquivos de configuração do Docker
 
-## Como rodar
+## Como rodar (1° passo)
 
 ### Levanta o ambiente (na raiz)
 
@@ -20,7 +20,7 @@ docker-compose up --build -d
 docker-compose down
 ```
 
-### verifica se o container estar de pé 
+### verifica se o container estar de pé
 
 ```bash
 docker ps
@@ -34,7 +34,12 @@ docker exec -it aula-laravel bash
 
 ### Instalando as dependencias
 
+### (2° passo)
+
+### Dentro da pasta src (no terminal aqui do vscode, digite cd src)
+
 ```bash
+
 composer install
 ```
 
@@ -49,8 +54,6 @@ php artisan migrate
 ```bash
 localhost/api/{rota}
 ```
-
-
 
 ##############################################################################
 
@@ -67,3 +70,7 @@ docker exec -it db_agenda bash
 ```
  --config core.autocrlf=input
 ```
+
+### dicas
+
+Ao criar uma função dentro do controller, sempre crie um rota para chamar aquela função

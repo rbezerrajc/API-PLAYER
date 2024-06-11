@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Noticias_DestaquesController;
 use App\Http\Controllers\ExemploController;
+use App\Http\Controllers\PlayerController;
 
 
 /*
